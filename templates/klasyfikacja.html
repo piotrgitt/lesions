@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Praca inz</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload landing">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="{{url_for('main_page')}}">Lesions</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="{{url_for('main_page')}}">Strona główna</a></li>
+							
+						</ul>
+					</nav>
+				</header>
+
+            <div id="main" class="wrapper style1">
+                <div class="container">
+                    
+
+                    <!-- Text -->
+                    <section id="app">
+                        <h3>Klasyfikator</h3>
+                        
+                        
+                        <form method="post" enctype=multipart/form-data>
+                            <div class="row gtr-uniform gtr-50">
+                            <div class="col-6 col-12-xsmall">
+                            <input type="file" name="image" id="file" value="" placeholder="Nie załadowano obrazu" style="width: 0.1px;height: 0.1px; opacity: 0;overflow: hidden; position: absolute;z-index: -1;"/>
+                            <label for="file" class="button primary icon solid fa-upload">Załaduj obraz</label>
+                            </div>
+
+                            <div class="col-6 col-12-xsmall">
+                            <ul class="actions">
+                            <li><input type=submit value=Predykcja class="button primary"></a></li>
+                            </ul>
+                            </div>
+
+                            <section>
+                            <div class="box alt">
+                            <p><span class="image left"><img src="{{ user_image }}" alt=""/></span><h3>Predykcja: </h3></p>
+                            <p>Klasa: {{prediction}}<br>
+                            Pewność: {{pewnosc}}<br>
+                            <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+                            </div>
+                            </section>
+                            </div>
+                        </form>
+                                  
+                        
+                    
+                    </section>
+                    
+                
+                </div>
+            </div>
+
+			
+
+			
+	
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/piotr-herdzina-628245184/" class="icon brands alt fa-linkedin-in"><span                         class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/piotrgitt" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="static/assets/js/jquery.dropotron.min.js"></script>
+			<script src="static/assets/js/jquery.scrollex.min.js"></script>
+			<script src="static/assets/js/browser.min.js"></script>
+			<script src="static/assets/js/breakpoints.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<script src="static/assets/js/main.js"></script>
+
+	</body>
+</html>

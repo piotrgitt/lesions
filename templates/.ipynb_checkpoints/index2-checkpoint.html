@@ -1,0 +1,15 @@
+<!doctype html>
+<title>Upload new File</title>
+<h1>Upload new File</h1>
+<form method=post enctype=multipart/form-data>
+    <input type=file name=image>
+    <input type=submit value=Predict>
+    <br>
+    <img src="{{ user_image }}" alt="Alternative text"  >
+    <p>{{ user_image }}</p>
+    <br>
+    <h3>Predykcja: {{prediction}}</h3>
+    <p>
+</form>
+
+ 
